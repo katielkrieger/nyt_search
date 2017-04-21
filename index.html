@@ -22,20 +22,25 @@
     .col-xs-6 {
       padding-bottom: 2rem;
     }
+    footer {
+      margin-bottom: 2rem;
+    }
 
   </style>
 </head>
 <body>
     <section class="top container">
-      <h1 class="header text-center">Looking back through the New York Times</h1>
-      <h2 class="header text-center">What was the first thing written about _________ ?</h2>
+      <h1 class="header text-center">Looking back through the New York Times
+      </h1>
+      <h2 class="header text-center">What was the first thing written about _________ ?
+      </h2>
     </section>
     <section class="top container">
       <div class="row">
-        <form class="form" action="#">
+        <form class="form" action="javascript:void(0)">
           <div class="form-group">
-            <label class="sr-only" for="title">Search Item</label>
             <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+              <label class="sr-only" for="title">Search Item</label>
               <input type="text" class="form-control" id="search" placeholder="Ex: Yosemite, Obama, or the Titanic...">
             </div>
             <div class="col-xs-6 text-right">
@@ -58,6 +63,13 @@
         </div>
       </div>
     </section>
+    <footer class="container">
+      <div class="row">
+        <div class="col-xs-12 text-center">
+          <a href="//developer.nytimes.com"><img src="//static01.nytimes.com/packages/images/developer/logos/poweredby_nytimes_150c.png"></a>
+        </div>
+      </div>
+    </footer>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
     <script>
       $(document).ready(function(){
