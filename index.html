@@ -115,6 +115,7 @@
               var $newBold = $("<b>");
 
               for (var i=0; i<10; i++) {
+                $newClipping.text("No results!");
                 if(response.response.docs[0] !== undefined){
 
                   $newClipping.text(response.response.docs[i].headline.main)
@@ -144,7 +145,6 @@
                   break;
                 }
               }
-              $newClipping.text("No results!");
           });
 
         });
