@@ -16,33 +16,36 @@
     .clipping {
       margin-top: 4rem;
     }
+    div {
+      margin-top: 1rem;
+    }
 
   </style>
 </head>
 <body>
-    <section class="top">
+    <section class="top container">
       <h1 class="header text-center">Looking back through the New York Times</h1>
       <h2 class="header text-center">What was the first thing written about _________ ?</h2>
-      <article class="container">
+    </section>
+    <section class="top container">
         <div class="row">
           <form class="form" action="#">
             <div class="form-group">
               <label class="sr-only" for="title">Search Item</label>
-              <div class="col-xs-12 col-sm-4 col-sm-offset-2">
+              <div class="col-xs-12 col-sm-6 col-sm-offset-3">
                 <input type="text" class="form-control" id="search" placeholder="Ex: Yosemite, Barack Obama, or the Titanic...">
               </div>
-              <div class="col-xs-12 col-sm-2">
+              <div class="col-xs-6 text-right">
                 <button type="submit" class="btn btn-primary search" value="headlines">Search NYT headlines
                 </button>
               </div>
-              <div class="col-xs-12 col-sm-2">
+              <div class="col-xs-6 text-left">
                 <button type="submit" class="btn btn-default search" value="all">Search all of the NYT
                 </button>
               </div>
             </div>
           </form>
         </div>
-      </article>
       <hr>
     </section>
     <section class="container">
