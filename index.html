@@ -43,7 +43,7 @@
               </button>
             </div>
             <div class="col-xs-6 text-left">
-              <button type="submit" class="btn btn-default search" value="all">Search newspaper
+              <button type="submit" class="btn btn-default search" value="all">Search contents
               </button>
             </div>
           </div>
@@ -67,7 +67,6 @@
         var $form = $("form");
         var $buttons = $(".search");
         var $clippings = $(".clippings");
-        var $remove = $(".remove");
 
         $buttons.on("click", function(event){
 
@@ -140,7 +139,8 @@
                     .css("font-weight", "lighter");
                   $newClipping.append($yearDiv);
 
-                  var $webDiv = $("<div>");
+                  var $webDiv = $("<div>")
+                    .css("margin-bottom", "1.5rem");
                   $newClipping.append($webDiv);
                   var $webAnchor = $("<a>")
                     .attr("href",response.response.docs[i].web_url)
@@ -151,16 +151,6 @@
                 }
               }
           });
-
-        });
-
-        // remove all items
-        
-        $remove.on("click", function(event){
-          var $holder = $(".holder");
-          var $clipping = $("img");
-          $holder.remove();
-          $clipping.remove();
 
         });
 
