@@ -19,6 +19,9 @@
     div {
       margin-top: 1rem;
     }
+    .col-xs-6 {
+      padding-bottom: 2rem;
+    }
 
   </style>
 </head>
@@ -28,26 +31,25 @@
       <h2 class="header text-center">What was the first thing written about _________ ?</h2>
     </section>
     <section class="top container">
-        <div class="row">
-          <form class="form" action="#">
-            <div class="form-group">
-              <label class="sr-only" for="title">Search Item</label>
-              <div class="col-xs-12 col-sm-6 col-sm-offset-3">
-                <input type="text" class="form-control" id="search" placeholder="Ex: Yosemite, Barack Obama, or the Titanic...">
-              </div>
-              <div class="col-xs-6 text-right">
-                <button type="submit" class="btn btn-primary search" value="headlines">Search headlines
-                </button>
-              </div>
-              <div class="col-xs-6 text-left">
-                <button type="submit" class="btn btn-default search" value="all">Search all content
-                </button>
-              </div>
+      <div class="row">
+        <form class="form" action="#">
+          <div class="form-group">
+            <label class="sr-only" for="title">Search Item</label>
+            <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+              <input type="text" class="form-control" id="search" placeholder="Ex: Yosemite, Barack Obama, or the Titanic...">
             </div>
-          </form>
-        </div>
+            <div class="col-xs-6 text-right">
+              <button type="submit" class="btn btn-primary search" value="headlines">Search headlines
+              </button>
+            </div>
+            <div class="col-xs-6 text-left">
+              <button type="submit" class="btn btn-default search" value="all">Search newspaper
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
     </section>
-    <hr>
     <section class="container">
       <div class="row clipping">
         <div class="col-xs-10 col-xs-offset-1 holder">
